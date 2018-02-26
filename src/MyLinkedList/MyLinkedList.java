@@ -25,7 +25,7 @@ public class MyLinkedList<T> implements Iterator, Iterable {
     }
 
     public void add(T o) {
-        Knoten<T> neuerKnoten = new Knoten<>();
+        Knoten<T> neuerKnoten = new Knoten();
         neuerKnoten.inhalt = o;
         if (letzterKnoten != null) {
             neuerKnoten.vorgänger = letzterKnoten;
