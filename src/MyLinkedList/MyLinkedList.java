@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication7;
+package MyLinkedList;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -14,23 +14,23 @@ import java.util.Iterator;
  */
 public class MyLinkedList<T> implements Iterator, Iterable {
 
-    private Knoten<T> ersterKnoten = null;
-    private Knoten<T> letzterKnoten = null;
-    private Knoten<T> aktuellerKnoten = null;
+    Knoten<T> ersterKnoten = null;
+    Knoten<T> letzterKnoten = null;
+    Knoten<T> aktuellerKnoten = null;
 
     @Override
     public boolean hasNext() {
-        boolean rg=aktuellerKnoten!=null;
-        if (aktuellerKnoten==null){
-            aktuellerKnoten=ersterKnoten;
+        boolean rg = aktuellerKnoten != null;
+        if (aktuellerKnoten == null) {
+            aktuellerKnoten = ersterKnoten;
         }
         return rg;
     }
 
     @Override
     public Object next() {
-        Object rg=aktuellerKnoten.inhalt;
-        aktuellerKnoten= aktuellerKnoten.nachfolger;
+        Object rg = aktuellerKnoten.inhalt;
+        aktuellerKnoten = aktuellerKnoten.nachfolger;
         return rg;
     }
 
@@ -47,12 +47,12 @@ public class MyLinkedList<T> implements Iterator, Iterable {
         letzterKnoten = neuerKnoten;
 
     }
-    
-    public Knoten getFirstElement(){
+
+    public Knoten<T> getFirstElement() {
         return ersterKnoten;
     }
-    
-    public Knoten getLastElement(){
+
+    public Knoten<T> getLastElement() {
         return letzterKnoten;
     }
 

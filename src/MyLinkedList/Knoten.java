@@ -3,13 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication7;
+package MyLinkedList;
 
 /**
  *
  * @author menze
  */
 public class Knoten<T> {
-    Knoten vorgänger=null, nachfolger=null;
-    T inhalt=null;
+
+    Knoten<T> vorgänger = null, nachfolger = null;
+    T inhalt = null;
+
+    public T getInhalt() {
+        return inhalt;
+    }
+
+    public String toString() {
+        return "" + inhalt;
+    }
 }
