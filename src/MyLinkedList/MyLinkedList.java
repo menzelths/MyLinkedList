@@ -37,11 +37,11 @@ public class MyLinkedList<T> implements Iterator, Iterable {
         letzterKnoten = neuerKnoten;
     }
 
-    public Knoten<T> getFirstElement() {
+    public Knoten<T> getFirst() {
         return ersterKnoten;
     }
 
-    public Knoten<T> getLastElement() {
+    public Knoten<T> getLast() {
         return letzterKnoten;
     }
 
