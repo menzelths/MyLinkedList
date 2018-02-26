@@ -12,11 +12,11 @@ import java.util.Iterator;
  *
  * @author menze
  */
-public class MyLinkedList implements Iterator, Iterable {
+public class MyLinkedList<T> implements Iterator, Iterable {
 
-    private Knoten ersterKnoten = null;
-    private Knoten letzterKnoten = null;
-    private Knoten aktuellerKnoten = null;
+    private Knoten<T> ersterKnoten = null;
+    private Knoten<T> letzterKnoten = null;
+    private Knoten<T> aktuellerKnoten = null;
 
     @Override
     public boolean hasNext() {
@@ -34,8 +34,8 @@ public class MyLinkedList implements Iterator, Iterable {
         return rg;
     }
 
-    public void add(Object o) {
-        Knoten neuerKnoten = new Knoten();
+    public void add(T o) {
+        Knoten<T> neuerKnoten = new Knoten<>();
         neuerKnoten.inhalt = o;
         if (letzterKnoten != null) {
             neuerKnoten.vorgänger = letzterKnoten;

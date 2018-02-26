@@ -15,10 +15,12 @@ public class JavaApplication7 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        MyLinkedList mll=new MyLinkedList();
+        MyLinkedList<Double> mll=new MyLinkedList();
         for (int i=0;i<10;i++){
             mll.add(Math.random());
         }
+        
+       // mll.add("Test");
         
         for (Object d:mll){
             System.out.println(""+d); 

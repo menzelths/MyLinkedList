@@ -9,7 +9,7 @@ package javaapplication7;
  *
  * @author menze
  */
-public class Knoten {
+public class Knoten<T> {
     Knoten vorgänger=null, nachfolger=null;
-    Object inhalt=null;
+    T inhalt=null;
 }
