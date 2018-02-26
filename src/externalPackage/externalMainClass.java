@@ -1,21 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package externalPackage;
 
 import MyLinkedList.MyLinkedList;
 
-/**
- *
- * @author menze
- */
 public class externalMainClass {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         MyLinkedList<Double> mll = new MyLinkedList();
         for (int i = 0; i < 10; i++) {
@@ -35,5 +23,4 @@ public class externalMainClass {
         System.out.println(mll.getFirstElement());
         System.out.println(mll.getLastElement());
     }
-
 }
