@@ -1,8 +1,9 @@
 package MyLinkedList;
 
+import java.util.Collection;
 import java.util.Iterator;
 
-public class MyLinkedList<T> implements Iterator, Iterable {
+public class MyLinkedList<T> implements Iterator<T>, Iterable<T> {
 
     Knoten<T> ersterKnoten = null;
     Knoten<T> letzterKnoten = null;
@@ -18,15 +19,15 @@ public class MyLinkedList<T> implements Iterator, Iterable {
     }
 
     @Override
-    public Object next() {
-        Object rg = aktuellerKnoten.inhalt;
+    public T next() {
+        T rg = aktuellerKnoten.inhalt;
         aktuellerKnoten = aktuellerKnoten.nachfolger;
         return rg;
     }
 
-    public void add(T o) {
+    public void add(T t) {
         Knoten<T> neuerKnoten = new Knoten();
-        neuerKnoten.inhalt = o;
+        neuerKnoten.inhalt = t;
         if (letzterKnoten != null) {
             neuerKnoten.vorgänger = letzterKnoten;
             letzterKnoten.nachfolger = neuerKnoten;
@@ -37,19 +38,19 @@ public class MyLinkedList<T> implements Iterator, Iterable {
         letzterKnoten = neuerKnoten;
     }
 
-    public Knoten<T> getFirst() {
-        return ersterKnoten;
+    public T getFirst() {
+        return ersterKnoten.inhalt;
     }
 
-    public Knoten<T> getLast() {
-        return letzterKnoten;
+    public T getLast() {
+        return letzterKnoten.inhalt;
     }
 
     public MyLinkedList() {
     }
 
     @Override
-    public Iterator iterator() {
+    public Iterator<T> iterator() {
         return this;
     }
 
