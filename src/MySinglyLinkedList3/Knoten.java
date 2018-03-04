@@ -1,7 +1,4 @@
-
 package MySinglyLinkedList3;
-
-
 
 public class Knoten<T> {
     T inhalt;

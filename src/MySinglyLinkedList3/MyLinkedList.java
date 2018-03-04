@@ -1,6 +1,5 @@
 package MySinglyLinkedList3;
 
-
 public class MyLinkedList<T> {
 
     Knoten<T> ersterKnoten = null;

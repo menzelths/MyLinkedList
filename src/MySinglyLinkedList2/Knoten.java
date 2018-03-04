@@ -1,4 +1,3 @@
-
 package MySinglyLinkedList2;
 
 public class Knoten {

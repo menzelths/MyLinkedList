@@ -5,7 +5,7 @@ import zoohandlung.Loewe;
 import zoohandlung.Tier;
 import zoohandlung.Laufen;
 
-public class externalPackageSingleList4 {
+public class Main4 {
      public static void main(String[] args) {
         MyLinkedList<Tier> mll=new MyLinkedList();
         for (int i=0;i<10;i++){
