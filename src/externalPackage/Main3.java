@@ -7,7 +7,7 @@ import zoohandlung.Tier;
 public class Main3 {
 
     public static void main(String[] args) {
-        MyLinkedList<Tier> mll = new MyLinkedList();
+        MyLinkedList<Tier> mll = new MyLinkedList<>();
         for (int i = 0; i < 10; i++) {
             Loewe l = new Loewe("Leo" + i, Math.random());
             mll.add(l);

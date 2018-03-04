@@ -6,7 +6,7 @@ public class MyLinkedList<T> {
     Knoten<T> letzterKnoten = null;
 
     public void add(T t) {
-        Knoten<T> k = new Knoten();
+        Knoten<T> k = new Knoten<>();
         k.inhalt = t;
         if (ersterKnoten == null) {
             ersterKnoten = k;
