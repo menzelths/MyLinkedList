@@ -13,7 +13,7 @@ public class Main5 {
         }
 
         while (!ms.isEmpty()) {
-            System.out.println("\nEntfernt: "+ms.pull() + "\n");
+            System.out.println("\nEntfernt: " + ms.pull() + "\n");
             System.out.println("\nRestliche Tiere:");
             for (Tier t : ms) {
                 System.out.println(t);

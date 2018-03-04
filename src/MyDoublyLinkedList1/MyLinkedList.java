@@ -1,6 +1,5 @@
 package MyDoublyLinkedList1;
 
-import MySinglyLinkedList4.*;
 import java.util.Iterator;
 
 public class MyLinkedList<T> implements Iterator<T>, Iterable<T> {

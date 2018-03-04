@@ -9,8 +9,8 @@ public class MyStack<T> extends MyLinkedList<T> {
     public T pull() {
         return removeLast();
     }
-    
-    public boolean isEmpty(){
-        return ersterKnoten==null;
+
+    public boolean isEmpty() {
+        return ersterKnoten == null;
     }
 }
