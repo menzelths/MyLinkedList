@@ -21,8 +21,6 @@ public class Papagei extends Tier implements Laufen {
         return wort;
     }
 
-    
-
     @Override
     public void setAnzahlBeine(int anzahlBeine) {
         this.anzahlBeine = anzahlBeine;

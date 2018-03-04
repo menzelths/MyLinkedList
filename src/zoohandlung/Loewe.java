@@ -4,7 +4,6 @@ public class Loewe extends Tier implements Laufen {
 
     String maehnenShampooMarke;
     int anzahlBeine;
-    
 
     public Loewe(String name, double gewicht) {
         this.name = name;
@@ -21,8 +20,6 @@ public class Loewe extends Tier implements Laufen {
         System.out.println("Ich brülle mit " + " dB");
         return dezibel;
     }
-
- 
 
     public void setAnzahlBeine(int anzahlBeine) {
         this.anzahlBeine = anzahlBeine;
