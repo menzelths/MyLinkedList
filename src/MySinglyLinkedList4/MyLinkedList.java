@@ -15,6 +15,7 @@ public class MyLinkedList<T> implements Iterator<T>, Iterable<T> {
         if (ersterKnoten == null) { //erstes Element
             ersterKnoten = k;
             letzterKnoten = k;
+            aktuellerKnoten = k;
         } else {
             letzterKnoten.nachfolger = k;
             letzterKnoten = k;
