@@ -10,12 +10,13 @@ public class MyLinkedList {
     public void add(Tier t) {
         Knoten k = new Knoten();
         k.inhalt = t;
-        if (ersterKnoten == null) {
+        if (ersterKnoten == null) { //erstes Element
             ersterKnoten = k;
             letzterKnoten = k;
+        } else {
+            letzterKnoten.nachfolger = k;
+            letzterKnoten = k;
         }
-        letzterKnoten.nachfolger = k;
-        letzterKnoten = k;
     }
 
     public void printAll() {

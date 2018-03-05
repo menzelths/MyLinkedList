@@ -15,12 +15,12 @@ public class MyLinkedList<T> implements Iterator<T>, Iterable<T> {
             ersterKnoten = k;
             aktuellerKnoten = k;
             letzterKnoten = k;
-            k.vorgänger = null; // Vorgänger vom ersten Element ist null
         } else {
             k.vorgänger = letzterKnoten; // Vorgänger ist der bisherige letzte Knoten
+            letzterKnoten.nachfolger = k;
+            letzterKnoten = k;
         }
-        letzterKnoten.nachfolger = k;
-        letzterKnoten = k;
+
     }
 
     public T removeLast() {

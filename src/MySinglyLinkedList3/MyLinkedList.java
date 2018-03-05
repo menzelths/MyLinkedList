@@ -8,12 +8,14 @@ public class MyLinkedList<T> {
     public void add(T t) {
         Knoten<T> k = new Knoten<>();
         k.inhalt = t;
-        if (ersterKnoten == null) {
+        k.inhalt = t;
+        if (ersterKnoten == null) { //erstes Element
             ersterKnoten = k;
             letzterKnoten = k;
+        } else {
+            letzterKnoten.nachfolger = k;
+            letzterKnoten = k;
         }
-        letzterKnoten.nachfolger = k;
-        letzterKnoten = k;
     }
 
     public void printAll() {

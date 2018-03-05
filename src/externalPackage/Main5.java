@@ -12,6 +12,10 @@ public class Main5 {
             ms.push(new Loewe("Leo" + i, Math.random()));
         }
 
+        for (Tier t : ms) {
+            System.out.println(t);
+        }
+
         while (!ms.isEmpty()) {
             System.out.println("\nEntfernt: " + ms.pull() + "\n");
             System.out.println("\nRestliche Tiere:");
